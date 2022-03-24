@@ -1,11 +1,16 @@
 body {
 	font-family: Garamond;
-	background-color: #d9d9d9;
+	/*background-color: #d9d9d9;*/
 	margin: 50px;
+	background: linear-gradient(-45deg, #789cd9, #a0b9e4, #c8d7f0, #dce5f5);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	/*height: 100vh;*/
 }
 
 .block, header {
 	background-color: #f2f2f2;
+	box-shadow: 7px 7px 15px;
 }
 
 .block {
@@ -48,4 +53,16 @@ p {
 
 .date {
 	font-style: italic;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
